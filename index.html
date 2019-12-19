@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>カードプロキシ</title>
+  <style>
+    img {
+      max-width : 320px;
+      max-height: 320px;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function () {
+      const card_list = decodeURIComponent(location.search.substr(1)).split(',');
+      const imgs = document.querySelectorAll("img");
+      const last = card_list.length < imgs.length ? card_list.length : imgs.length;
+
+      for (let i = 0; i < last; i++) {
+        imgs[i].src = card_list[i];
+      }
+
+      if (9 < card_list.length) {
+        const url = location.href.substr(0, location.href.indexOf("?") + 1);
+        const param = card_list.slice(9);
+        window.open(url + param);
+      }
+    };
+  </script>
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td><img></td>
+        <td><img></td>
+        <td><img></td>
+      </tr>
+      <tr>
+        <td><img></td>
+        <td><img></td>
+        <td><img></td>
+      </tr>
+      <tr>
+        <td><img></td>
+        <td><img></td>
+        <td><img></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
