@@ -21,9 +21,9 @@
         imgs[i].src = card_list[i];
       }
 
-      if (9 < card_list.length) {
+      if (imgs.length < card_list.length) {
         const url = location.href.substr(0, location.href.indexOf("?") + 1);
-        const param = card_list.slice(9);
+        const param = card_list.slice(imgs.length);
         window.open(url + param);
       }
     };
