@@ -1,0 +1,16 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:5500/?https://scrapbox.io/api/pages/RutileWIXOSS/%E3%83%9B%E3%83%BC%E3%83%AA%E3%83%BC%E3%83%BB%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B9%E3%83%A9%E3%83%A0/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E5%A4%A7%E9%A1%98%E6%88%90%E5%B0%B1/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%BB%E3%83%94%E3%83%AB%E3%83%AB%E3%82%AF%20KEY/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E5%B9%BB%E6%80%AA%20%E3%83%8D%E3%82%B3%E3%83%A0%E3%82%B9/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E5%B9%BB%E6%80%AA%20%E3%83%8D%E3%82%B3%E3%83%A0%E3%82%B9/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E5%B9%BB%E6%80%AA%20%E3%83%8D%E3%82%B3%E3%83%A0%E3%82%B9/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E5%B9%BB%E6%80%AA%20%E3%83%8D%E3%82%B3%E3%83%A0%E3%82%B9/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E8%99%B9%E3%81%AE%E8%92%BC%E5%A4%A9%20%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%81%E3%82%A7%E3%83%AB/icon,https://scrapbox.io/api/pages/RutileWIXOSS/%E8%99%B9%E3%81%AE%E8%92%BC%E5%A4%A9%20%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%81%E3%82%A7%E3%83%AB/icon",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
