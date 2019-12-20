@@ -13,7 +13,7 @@
   </style>
   <script type="text/javascript">
     window.onload = function () {
-      const card_list = decodeURIComponent(location.search.substr(1)).split(',');
+      const card_list = decodeURIComponent(location.search.substring(1)).split(',');
       const imgs = document.querySelectorAll("img");
       const last = card_list.length < imgs.length ? card_list.length : imgs.length;
 
@@ -22,7 +22,7 @@
       }
 
       if (imgs.length < card_list.length) {
-        const url = location.href.substr(0, location.href.indexOf("?") + 1);
+        const url = location.href.substring(0, location.href.indexOf("?") + 1);
         const param = card_list.slice(imgs.length);
         window.open(url + param);
       }
