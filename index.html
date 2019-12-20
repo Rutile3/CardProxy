@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>カードプロキシ</title>
   <style>
-    img {
-      max-width : 320px;
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      line-height: 0;
+    }
+
+    td {
+      padding: 0;
+      max-width: 230px;
       max-height: 320px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    img.card {
+      min-width: 230px;
+      max-width: 230px;
+      min-height: 320px;
+      max-height: 320px;
+    }
+
+    img.key-card {
+      min-width: 320px;
+      max-width: 320px;
+      min-height: 230px;
+      max-height: 230px;
+      transform: rotate(90deg) translateY(45px);
     }
   </style>
   <script type="text/javascript">
     window.onload = function () {
       const card_list = decodeURIComponent(location.search.substr(1)).split(',');
-      const imgs = document.querySelectorAll("img");
+      const imgs = document.querySelectorAll('img');
       const last = card_list.length < imgs.length ? card_list.length : imgs.length;
 
       for (let i = 0; i < last; i++) {
         imgs[i].src = card_list[i];
+        imgs[i].onload = function () {
+          if (imgs[i].naturalWidth / imgs[i].naturalHeight < 1) {
+            imgs[i].classList.add('card');
+          }
+          else {
+            imgs[i].classList.add('key-card');
+          }
+        }
       }
 
       if (9 < card_list.length) {
@@ -29,25 +62,25 @@
     };
   </script>
 </head>
+
 <body>
   <table>
-    <tbody>
-      <tr>
-        <td><img></td>
-        <td><img></td>
-        <td><img></td>
-      </tr>
-      <tr>
-        <td><img></td>
-        <td><img></td>
-        <td><img></td>
-      </tr>
-      <tr>
-        <td><img></td>
-        <td><img></td>
-        <td><img></td>
-      </tr>
-    </tbody>
+    <tr>
+      <td><img></td>
+      <td><img></td>
+      <td><img></td>
+    </tr>
+    <tr>
+      <td><img></td>
+      <td><img></td>
+      <td><img></td>
+    </tr>
+    <tr>
+      <td><img></td>
+      <td><img></td>
+      <td><img></td>
+    </tr>
   </table>
 </body>
+
 </html>
