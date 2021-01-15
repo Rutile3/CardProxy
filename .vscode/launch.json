@@ -9,7 +9,7 @@
       "type": "chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "http://localhost:5500/?https://scrapbox.io/api/pages/RutileWIXOSS/マドカ%2F%2Fフロート/icon
+      "url": "http://localhost:5500/?https://scrapbox.io/api/pages/RutileWIXOSS/マドカ%2F%2Fフロート/icon",
       "webRoot": "${workspaceFolder}"
     }
   ]
