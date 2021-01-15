@@ -43,7 +43,7 @@
   </style>
   <script type="text/javascript">
     window.onload = function () {
-      const card_list = decodeURIComponent(location.search.substring(1)).split(',');
+      const card_list = location.search.substring(1).split(',');
       const imgs = document.querySelectorAll("img");
       const last = card_list.length < imgs.length ? card_list.length : imgs.length;
 
